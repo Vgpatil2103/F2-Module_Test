@@ -10,7 +10,14 @@ const searchInput = document.getElementById("search-tab");
 const leftmenu=document.querySelector(".left-menu");
 const mergemenu=document.querySelector(".merged-menu");
 const container=document.querySelector(".section");
+const close=document.querySelector(".close");
 
+function hide(){
+  mergemenu.style.display="none";
+  leftmenu.style.display="block";
+}
+
+close.addEventListener("click",hide);
 
 function showMenu(){
     mergemenu.style.display="block";
@@ -189,6 +196,8 @@ recipeData.forEach(recipe => {
     const timeForDish = document.createElement('p');
     timeForDish.id = 'time-for-dish';
     timeForDish.textContent = recipe.time;
+
+
     time.appendChild(timeForDish);
 
     card.appendChild(cardImage);
@@ -282,6 +291,24 @@ function updateDisplayedRecipes() {
     timeForDish.id = 'time-for-dish';
     timeForDish.textContent = recipe.time;
     time.appendChild(timeForDish);
+
+    const like = document.createElement("button");
+like.className = "like-comment";
+like.innerText = "♡";
+like.style.fontSize="25px";
+let isLiked = false;
+
+like.addEventListener("click", function() {
+  if (isLiked) {
+    like.innerText = "♡";
+    like.style.fontSize="25px";
+  } else {
+    like.innerText = "🧡";
+    like.style.fontSize="15px";
+  }
+  isLiked = !isLiked;
+});
+    card.appendChild(like);
 
     card.appendChild(cardImage);
     card.appendChild(vegNonVeg);
