@@ -144,6 +144,24 @@ line-height: 26px; /* 130% */
     gap: 15px;
     cursor: pointer;
 
+
+
+}
+.filter{
+    color: #252525;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.recipe-section-span{
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 127%; /* 20.32px */
 }
 
 .main-section{
@@ -179,11 +197,19 @@ line-height: normal;
     width: 305px;
 height: 320px;
 flex-shrink: 0;
-border: 1px solid rgb(180, 169, 169);
+border-radius: 16px;
+background: #FFF;
+
+/* Shadow/shadow-sm */
+box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
 padding: 5px;
 display: flex;
 flex-direction: column;
 gap:0px;
+}
+
+.card-image>img{
+    border-radius: 10px;
 }
 .dishimg{
     width: 289px;
@@ -261,10 +287,51 @@ line-height: 136.523%; /* 27.305px */
     display: flex;
     gap: 10px;
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 .recipe-cards{
     display: flex;
-    flex:4;
     flex-wrap: wrap;
+    flex:4;
+    
     gap:10px;
+}
+.links{
+    display: flex;
+    gap:90px;
+}
+
+.left-menu{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    display: none;
+    
+}
+.merged-menu{
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: none;
+}
+.menu-m ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    list-style:none;
+    padding-top: 20px;
+}
+
+.merged-menu>img{
+    margin-left: 20px;
+}
+.search-msg>span{
+    color: #252525;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
