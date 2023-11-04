@@ -1,0 +1,270 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+height: 80px;
+flex-shrink: 0;
+padding: 15px;
+
+}
+.menu{
+    display: flex;
+}
+.menu>ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: -20px;
+    
+}
+
+.menu>ul li{
+    list-style: none;
+    margin: 30px;
+    padding-top: -20px;
+    cursor: pointer;
+}
+.menu>ul li:first-child{
+    color: green;
+}
+.logo{
+    margin-left: 80px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-section>img{
+    width: 1200px;
+height: 355px;
+flex-shrink: 0;
+}
+.search-msg{
+    margin-left: 40px;
+
+}
+
+.search{
+    width: 94vw;
+    height: 42px;
+  
+    margin-left: 40px;
+    padding: 10px;
+    display: flex;
+}
+.search>input{
+    width: 98%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color:rgb(243,243,243);
+}
+.search>img{
+    height: 29px;
+}
+.recipe-section{
+    display: flex;
+    padding: 38px;
+    gap:20px
+}
+
+.all-recipes,.Veg-recipes,.Non-Veg-recipes{
+    display: flex;
+    width: 236.8px;
+    height: 86px;
+    padding: 30px 29.8px 30px 29px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.all-recipes{
+background-color:rgb(220,88,42) ;
+
+}
+.Veg-recipes{
+background-color:rgb(196,214,0) ;
+}
+.Non-Veg-recipes{
+background-color: rgb(234,170,0);
+}
+
+.info{
+    width: 290px;
+}
+.footer{
+    padding: 40px;
+}
+.company,.resources{
+    color: #253D4E;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 130% */
+}
+.footer-link{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+#Suscribe{
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 70px;
+}
+.email>input{
+    outline: none;
+    height: 40px;
+}
+.contact{
+    width: 300px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.cookpal-info,.company-links,.resources-links,.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+
+}
+
+.main-section{
+    padding: 40px;
+    display: flex !important;
+
+}
+.filter{
+    color: #252525;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.filter-section{
+    display: flex;
+width: 284px;
+flex-direction: column !important;
+align-items: flex-start;
+gap: 15px;
+flex:1;
+}
+.filter-section>p{
+    color: #252525;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.cardlist{
+    width: 305px;
+height: 320px;
+flex-shrink: 0;
+border: 1px solid rgb(180, 169, 169);
+padding: 5px;
+display: flex;
+flex-direction: column;
+gap:0px;
+}
+.dishimg{
+    width: 289px;
+height: 200px;
+}
+#type{
+    color: #A1A1A1;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 240% */
+}
+#name-of-dish{
+    color: #252525;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 120% */
+}
+
+#star{
+    width: 13.335px;
+    height: 12.668px;
+    flex-shrink: 0;
+}
+#star-rating{
+    color: var(--Grey, #ADADAD);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.star-rating{
+    display: flex;
+    
+}
+.dish-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#time-for-dish{
+    color: #DC582A;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 136.523%; /* 27.305px */
+}
+
+#heart{
+    border-radius: 16px;
+    background: #FFF;
+    
+    /* Shadow/shadow-sm */
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+}
+
+#review{
+    border-radius: 16px;
+    background: #FFF;
+    
+    /* Shadow/shadow-sm */
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+.like-comment{
+    display: flex;
+    gap: 10px;
+}
+
+.recipe-cards{
+    display: flex;
+    flex:4;
+    flex-wrap: wrap;
+    gap:10px;
+}
